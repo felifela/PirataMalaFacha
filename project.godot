@@ -1,0 +1,32 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Prueba"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+SistemaCutscene="*res://SistemaCutscene.gd"
+Global="*res://Global.gd"
+
+[layer_names]
+
+2d_physics/layer_1="Enemigo"
+2d_physics/layer_2="Jugador"
+2d_physics/layer_3="Ambiente"
+2d_physics/layer_4="PlataformaJefe"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
